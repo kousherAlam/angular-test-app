@@ -1,3 +1,4 @@
+import { interceptors } from './services/interceptors/index';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,7 +17,7 @@ import { MainLayoutsComponent } from './layouts/main-layouts/main-layouts.compon
     AppRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [interceptors],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
